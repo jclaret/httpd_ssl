@@ -112,6 +112,7 @@ Run the container using:
 
 ```bash
 podman run -d -p 8080:8080 --name my-httpd-secure httpd-ssl-auth
+podman run -d -p 8080:8080 --name my-httpd-secure -v /opt/webcache/data:/usr/local/apache2/htdocs httpd-ssl-auth
 ```
 
 ### 8. Access the Server
